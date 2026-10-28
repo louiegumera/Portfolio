@@ -107,4 +107,22 @@ ALTER TABLE dim_customers
 MODIFY COLUMN birth_date DATE;
 ```
 
-![alt](https://github.com/louiegumera/Portfolio/blob/6ceab3a43d7ef1ea705d8d5364b2d565330bc674/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/2022-2024.png)
+## Data Visualization With Power BI
+
+### Lotus Retail Sales Performance Dashboard
+![Lotus Retail Sales Performance Dashboard](https://github.com/louiegumera/Portfolio/blob/6ceab3a43d7ef1ea705d8d5364b2d565330bc674/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/2022-2024.png)
+
+### KPI Cards
+![KPI Cards](https://github.com/louiegumera/Portfolio/blob/9b833cd7b04a4479ee0ae22948421f80f7736de0/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/KPI%20Cards.png)
+
+### Monthly Revenue Trends
+![Monthly Revenue Trends](https://github.com/louiegumera/Portfolio/blob/9b833cd7b04a4479ee0ae22948421f80f7736de0/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/Monthly%20Revenue%20Trends.png)
+
+### New and Returning Customer Trends
+![New and Returning Customer Trends](https://github.com/louiegumera/Portfolio/blob/9b833cd7b04a4479ee0ae22948421f80f7736de0/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/New%20and%20Returning%20Customers.png)
+
+### Sales by Store
+![Sales by Store](https://github.com/louiegumera/Portfolio/blob/9b833cd7b04a4479ee0ae22948421f80f7736de0/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/Sales%20by%20Store.png)
+
+### Year Slicer
+![Year Slicer](https://github.com/louiegumera/Portfolio/blob/9b833cd7b04a4479ee0ae22948421f80f7736de0/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/Year%20Slicer.png)

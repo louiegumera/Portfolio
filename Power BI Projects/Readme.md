@@ -2,7 +2,7 @@
 
 ## 🛠️ TOOLS USED IN THIS PROJECT
 
-• SQL - Data Cleaning, Data Validation, Querying, and Data Transformation
+• SQL - Data Cleaning, Data Validation, Query, Data Transformation
 
 • Power BI - Data Visualization, DAX, Interactive Dashboard, KPI Reporting, and Sales Performance Analysis
 
@@ -11,6 +11,8 @@
 Created an interactive dashboard to analyze retail sales performance, profitability, store revenue, and customer trends using the Lotus sales dataset.
 
 ## Key Features
+
+• Implemented data cleaning, data validation, and data transformation using SQL.
 
 • Developed KPI cards for completed revenue, gross profit, gross margin, and completed orders.
 
@@ -87,4 +89,20 @@ WHERE row_num > 1;
 ```sql
 ALTER TABLE cs_staging2
 DROP COLUMN row_num;
+```
+
+### Standardizing the date format
+```sql
+UPDATE dim_customers
+SET birth_date =
+CASE
+	WHEN birth_date LIKE '%-%-%' THEN STR_TO_DATE(birth_date, '%Y-%m-%d')
+    WHEN birth_date LIKE '%/%/%' THEN STR_TO_DATE(birth_date, '%d/%m/%Y')
+END;
+```
+
+### Standardizing the datatype
+```sql
+ALTER TABLE dim_customers
+MODIFY COLUMN birth_date DATE;
 ```

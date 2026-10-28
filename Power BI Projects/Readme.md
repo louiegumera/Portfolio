@@ -24,7 +24,7 @@ Created an interactive dashboard to analyze retail sales performance, profitabil
 
 ## Data Cleaning With SQL
 
-### Identifying Duplicates
+### Identifying duplicates
 
 ```sql
 WITH duplicate_test AS(
@@ -46,4 +46,45 @@ FROM cs_staging
 SELECT *
 FROM duplicate_test
 WHERE row_num > 1;
+```
+
+### Creating a backup table
+
+A backup table is necessary before doing any changes, it keeps the original table
+intact for future revisions.
+
+```sql
+CREATE TABLE `cs_staging2` (
+  `customer_id` text,
+  `full_name` text,
+  `gender` text,
+  `birth_date` text,
+  `phone` text,
+  `email` text,
+  `city` text,
+  `region` text,
+  `loyalty_tier` text,
+  `registration_date` text,
+  `row_num` int
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO cs_staging2
+SELECT *,
+ROW_NUMBER() OVER(PARTITION BY customer_id, full_name, gender, birth_date, phone, email, city, region, loyalty_tier, registration_date) AS row_num
+FROM cs_staging;
+```
+
+### Deleting any duplicates
+
+```sql
+DELETE
+FROM cs_staging2
+WHERE row_num > 1;
+```
+
+### Dropping the row_num column after the deleting process
+
+```sql
+ALTER TABLE cs_staging2
+DROP COLUMN row_num;
 ```

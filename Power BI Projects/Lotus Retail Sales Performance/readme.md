@@ -10,7 +10,7 @@
 
 ## Summary
 
-Created an interactive dashboard to analyze retail sales performance, profitability, store revenue, and customer trends using the Lotus sales dataset.
+Transformed, cleaned, and validated retail sales data using SQL, improving data consistency and preparing the dataset for further analysis and developed an interactive Power BI dashboard to monitor key performance indicators (KPIs), including completed revenue, gross profit, gross margin, and completed orders, with visualizations of monthly revenue trends, store sales comparisons, and new versus returning customer trends
 
 ## Key Features
 

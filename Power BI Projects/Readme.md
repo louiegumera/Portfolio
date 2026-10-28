@@ -1,4 +1,4 @@
-# Lotus Retail Sales Performance Dashboard
+# **Lotus Retail Sales Performance Dashboard**
 
 ## 🛠️ TOOLS USED IN THIS PROJECT
 • SQL - Data Cleaning, Data Validation, Querying, and Data Transformation

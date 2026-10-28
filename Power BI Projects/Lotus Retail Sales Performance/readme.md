@@ -106,3 +106,5 @@ END;
 ALTER TABLE dim_customers
 MODIFY COLUMN birth_date DATE;
 ```
+
+![alt](https://github.com/louiegumera/Portfolio/blob/6ceab3a43d7ef1ea705d8d5364b2d565330bc674/Power%20BI%20Projects/Lotus%20Retail%20Sales%20Performance/Dashboard/2022-2024.png)
